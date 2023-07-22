@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laptop Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div>
+        <form>
+            <h2>Enter Company Name</h2>
+            <input type='text' id="comp" name="company" value="HP">
+            <h2>Enter Memory in TB for the HDD</h2>
+            <input type='number' id="mem" name="memory">
+            <h2>Enter the Ram value in GB</h2>
+            <input type='number' id="ram_value" name="ram">
+            <h2>Enter the Windows OS</h2>
+            <input type='number' id="windows_os" name="os">
+            <h2>Enter the size of the screen in inches</h2>
+            <input type='number' id="size_of_screen" name="size_in_inches">
+        </form>
+    </div>
+    <div>
+        <button class="submit" onclick="onClickedEstimatePrice()">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result">
+            <h2></h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
